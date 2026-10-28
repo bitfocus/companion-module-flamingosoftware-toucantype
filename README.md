@@ -1,11 +1,18 @@
-# companion-module-[replace with module name]
+# companion-module-flamingosoftware-toucantype
 
-See [HELP.md](./companion/HELP.md) and [LICENSE](./LICENSE)
+A [Bitfocus Companion](https://bitfocus.io/companion) module for
+[ToucanType](https://flamingo.software).
 
-## Getting started
+See [HELP.md](companion/HELP.md) for setup and a description of the actions,
+variables and feedbacks.
 
-Executing a `yarn` command should perform all necessary steps to develop the module, if it does not then follow the steps below.
+## Development
 
-The module can be built once with `yarn build`. This should be enough to get the module to be loadable by companion.
+```
+corepack enable
+yarn install
+yarn package        # builds pkg/ and a .tgz
+```
 
-While developing the module, by using `yarn dev` the compiler will be run in watch mode to recompile the files on change.
+To run from source, point Companion's **Developer Modules** path at the folder
+*containing* this one, and enable developer modules in the launcher.
